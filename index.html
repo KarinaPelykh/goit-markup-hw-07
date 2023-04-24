@@ -56,6 +56,16 @@
             </li>
           </ul>
         </address>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icons.svg#menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- =========/HEADER======= -->
@@ -133,13 +143,41 @@
           <h2 class="title-list">What are we doing</h2>
           <ul class="menu-img list">
             <li class="pic-section list">
-              <img src="./images/img-1.jpg" alt="laptop" width="360" />
+              <img
+                srcset="
+                  ./images/work/rectangle_des@1x-2.jpg 1x,
+                  ./images/work/rectangle_des@2x-2.jpg 2x
+                "
+                src="./images/work/img-1.jpg"
+                alt="retina-laptop"
+                width="360"
+                height="300"
+              />
+            </li>
+
+            <li class="pic-section list">
+              <img
+                srcset="
+                  ./images/work/rectangle_des@1x-1.jpg 1x,
+                  ./images/work/rectangle_des@1x-1.jpg 2x
+                "
+                src="./images/work/img-2.jpg"
+                alt="retina-pictures"
+                width="360"
+                height="300"
+              />
             </li>
             <li class="pic-section list">
-              <img src="./images/img-2.jpg" alt="pictures" width="360" />
-            </li>
-            <li class="pic-section list">
-              <img src="./images/img-3.jpg" alt="phone" width="360" />
+              <img
+                srcset="
+                  ./images/work/rectangle_des@1x.jpg 1x,
+                  ./images/work/rectangle_des@2x.jpg 2x
+                "
+                src="./images/work/img-3.jpg"
+                alt="retina-phone"
+                width="360"
+                height="300"
+              />
             </li>
           </ul>
         </div>
@@ -150,7 +188,16 @@
           <h2 class="title-img">Our Team</h2>
           <ul class="menu-ul-list list">
             <li class="list thumb">
-              <img src="./images/img-7.jpg" alt="foto" width="264" />
+              <img
+                srcset="
+                  ./images/team/img-4_des@1x.jpg 1x,
+                  ./images/team/img_des@1-2x.jpg 2x
+                "
+                src="./images/team/img-7.jpg"
+                alt="retina-foto"
+                width="264"
+                height="260"
+              />
               <div class="container-heading">
                 <h3 class="caption">Mark Guerrero</h3>
                 <p class="text-img">Product Designer</p>
@@ -188,7 +235,16 @@
             </li>
 
             <li class="list thumb">
-              <img src="./images/img-4.jpg" alt="foto" width="264" />
+              <img
+                srcset="
+                  ./images/team/img-3_des@1x.jpg 1x,
+                  ./images/team/img_des@2-2x.jpg 2x
+                "
+                src="./images/team/img-4.jpg"
+                alt="retina-foto"
+                width="264"
+                height="260"
+              />
               <div class="container-heading">
                 <h3 class="caption">Tom Ford</h3>
                 <p class="text-img">Frontend Developer</p>
@@ -226,7 +282,16 @@
             </li>
 
             <li class="list thumb">
-              <img src="./images/img-6.jpg" alt="foto" width="264" />
+              <img
+                srcset="
+                  ./images/team/img-2_des@1x.jpg 1x,
+                  ./images/team/img_des@3-2x.jpg 2x
+                "
+                src="./images/team/img-6.jpg"
+                alt="retina-foto"
+                width="264"
+                height="260"
+              />
               <div class="container-heading">
                 <h3 class="caption">Camila Garcia</h3>
                 <p class="text-img">Marketing</p>
@@ -264,7 +329,16 @@
             </li>
 
             <li class="list thumb">
-              <img src="./images/img-5.jpg" alt="foto" width="264" />
+              <img
+                srcset="
+                  ./images/team/img-1_des@1x.jpg 1x,
+                  ./images/team/img_des@4-2x.jpg 2x
+                "
+                src="./images/team/img-5.jpg"
+                alt="retina-foto"
+                width="264"
+                height="260"
+              />
               <div class="container-heading">
                 <h3 class="caption">Daniel Wilson</h3>
                 <p class="text-img">UI Designer</p>
@@ -540,6 +614,88 @@
         </div>
       </div>
     </section>
+
+    <!-- Mobail menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="8"
+          height="8"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li>
+          <a class="link-menu-hamburger" href="">About</a>
+        </li>
+        <li>
+          <a class="link-menu-hamburger" href="">Products</a>
+        </li>
+        <li>
+          <a class="link-menu-hamburger current" href="">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="menu list">
+        <li class="menu-item list">
+          <a class="mail-link-hamburger link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="menu-item list">
+          <a class="mail-link link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="section-menu-icon list">
+        <li class="section-items-icon">
+          <a class="icon-link" href=" section-icon-list">
+            <svg class="items-ul-icon" width="16" height="16">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="section-items-icon">
+          <a class="icon-link" href=" section-icon-list">
+            <svg class="items-ul-icon" width="16" height="16">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="section-items-icon">
+          <a class="icon-link" href=" section-icon-list">
+            <svg class="items-ul-icon" width="16" height="16">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="section-items-icon">
+          <a class="icon-link" href=" section-icon-list">
+            <svg class="items-ul-icon" width="16" height="16">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
